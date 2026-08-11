@@ -1,0 +1,26 @@
+.partage-reseaux {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.partage-reseaux a,
+.partage-reseaux button {
+  display: inline-flex;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.partage-reseaux img {
+  width: 60px;
+  height: 60px;
+  transition: filter 0.1s ease, opacity 0.3s ease;
+}
+
+.partage-reseaux a:hover img,
+.partage-reseaux button:hover img {
+  filter: invert(13%) sepia(93%) saturate(3862%) hue-rotate(336deg) brightness(79%) contrast(97%);
+}
