@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (btnCopier) {
     btnCopier.addEventListener("click", function() {
       navigator.clipboard.writeText(urlPage).then(function() {
-          alert("Le lien a été copié !");
+          alert("Link copied!");
       }).catch(function(err) {
           console.error("Erreur lors de la copie du lien : ", err);
       });
