@@ -1,1 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
+/* =========================================================
+   TYPOGRAPHIE DU CONTENU
+========================================================= */
+.learnworlds-section:not(.lw-topbar) h1,
+.learnworlds-section:not(.lw-topbar) h2,
+.learnworlds-section:not(.lw-topbar) h3,
+.learnworlds-section:not(.lw-topbar) h4,
+.learnworlds-section:not(.lw-topbar) h5,
+.learnworlds-section:not(.lw-topbar) h6 {
+    font-family: "EB Garamond", Garamond, serif !important;
+    font-weight: 500 !important;
+}
+
+.learnworlds-section:not(.lw-topbar) p,
+.learnworlds-section:not(.lw-topbar) span:not(.learnworlds-icon),
+.learnworlds-section:not(.lw-topbar) li,
+.learnworlds-section:not(.lw-topbar) label,
+.learnworlds-section:not(.lw-topbar) .learnworlds-main-text,
+.learnworlds-section:not(.lw-topbar) .learnworlds-main-text-normal {
+    font-family: "EB Garamond", Garamond, serif !important;
+    font-weight: 500 !important;
+}
+
+/* =========================================================
+   LIENS DU CONTENU HORS MENU
+========================================================= */
+.learnworlds-section:not(.lw-topbar) a:not(#menu-sacredsongs-container a),
+.learnworlds-section:not(.lw-topbar) a:not(#menu-sacredsongs-container a) *,
+.learnworlds-section:not(.lw-topbar) a:visited:not(#menu-sacredsongs-container a),
+.learnworlds-section:not(.lw-topbar) a:visited:not(#menu-sacredsongs-container a) * {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+/* =========================================================
+   MENU CENTRALISÉ : TYPOGRAPHIE ET STRUCTURE
+========================================================= */
+#menu-sacredsongs-container ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#menu-sacredsongs-container li {
+    margin-bottom: 12px !important;
+}
+
+#menu-sacredsongs-container a,
+#menu-sacredsongs-container a *,
+#menu-sacredsongs-container a:visited,
+#menu-sacredsongs-container a:visited * {
+    color: #ffffff !important;
+    font-family: "EB Garamond", Garamond, serif !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    display: block;
+}
+
+/* =========================================================
+   COLONNE DORÉE + MENU FIXE (DESKTOP)
+========================================================= */
+@media (min-width: 992px) {
+    #menu-sacredsongs-container {
+        position: fixed !important;
+        top: 135px !important;
+        right: 5vw !important;
+        left: auto !important;
+        width: 280px !important;
+        max-width: 280px !important;
+        bottom: auto !important;
+        height: auto !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        z-index: 20 !important;
+        padding: 30px; /* Espace intérieur du menu */
+    }
+
+    #menu-sacredsongs-container::before {
+        content: "";
+        position: fixed;
+        top: 96px;
+        bottom: 0;
+        right: 5vw;
+        width: 280px;
+        background-color: #C9A063;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    footer, .lw-footer, .learnworlds-footer {
+        position: relative !important;
+        z-index: 50 !important;
+        width: 100% !important;
+        max-width: none !important;
+        background-color: #f8f6f1 !important;
+    }
+}
+
+/* =========================================================
+   SURVOL ET LIENS ACTIFS (Bordeaux #800020)
+========================================================= */
+.learnworlds-section:not(.lw-topbar) a:hover,
+.learnworlds-section:not(.lw-topbar) a:hover *,
+#menu-sacredsongs-container a:hover,
+#menu-sacredsongs-container a:hover * {
+    color: #800020 !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+}
+
+.learnworlds-section:not(.lw-topbar) a.active,
+.learnworlds-section:not(.lw-topbar) a.active *,
+#menu-sacredsongs-container a.active,
+#menu-sacredsongs-container a.active * {
+    color: #800020 !important;
+    font-style: normal !important;
+    font-weight: 600 !important; /* Légèrement plus gras pour marquer la page active */
+    text-decoration: none !important;
+    text-shadow: none !important;
+}
+
+/* =========================================================
+   NAVIGATION FLUIDE ET ANCRES
+========================================================= */
+html {
+    scroll-behavior: smooth !important;
+}
+
+.lw-page-anchor {
+    display: block;
+    height: 1px;
+    scroll-margin-top: 120px;
+}
